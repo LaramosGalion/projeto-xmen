@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@media (max-width:1120px){
+    .cabecalho .logo{
+        max-width: 190px;
+    }
+
+    .selecao_de_personagens{
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    section.personagens{
+        margin-top: 37px;
+    }
+
+    .selecao_de_personagens .titulo{
+        font-size: 1rem;
+    }
+
+    main.selecao_de_personagens > section.personagens  ul.lista_de_personagens{
+        gap: 9px;
+    }
+
+    ul.lista_de_personagens li.personagem img{
+        width: 80px;
+
+    }
+
+    .personagem_selecionado .personagem_grande{
+        width: 350px;
+        aspect-ratio: 1/1;
+    }
+
+    .personagem_selecionado .descricao_personagem{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+/* O uso dos media-querries foi somente para o uso as adaptações, pois com o wrap reverse já tinha um resultado bom para a transformação */
