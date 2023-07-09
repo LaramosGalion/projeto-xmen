@@ -62,3 +62,4 @@ function removerSelecaoDoPersonagemEAdicao(personagem) {
     personagem.classList.add("selecionado");
 }
 
+

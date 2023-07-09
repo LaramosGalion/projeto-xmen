@@ -91,10 +91,10 @@ li.personagem{
     border-bottom: 2px solid var(--cor3);
 }
 
-li.personagem > img{
+li.personagem  img{
     width: 100%;
     height: 100%;
-    margin-bottom: -5px;
+    /* margin-bottom: -5px; */
 }
 
 .lista_de_personagens .personagem.selecionado{
