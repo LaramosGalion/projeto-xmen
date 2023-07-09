@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media (max-width:1120px){
+
+    body::before{
+        height: 110%;
+    }
+
     .cabecalho .logo{
         max-width: 190px;
     }
@@ -11,7 +16,7 @@
     }
 
     section.personagens{
-        margin-top: 37px;
+        margin-top: 20px;
     }
 
     .selecao_de_personagens .titulo{
@@ -34,6 +39,7 @@
 
     .personagem_selecionado .descricao_personagem{
         width: 80%;
+        aspect-ratio: 1/1;
         margin: 20px auto;
     }
 }

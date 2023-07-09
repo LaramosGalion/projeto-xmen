@@ -2,6 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
 
+:root{
+    --cor1:black;
+    --cor2:white;
+    --cor3:#47F4FF;
+}
+
+::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,19 +20,17 @@
     font-family: "Oxanium", cursive;
     font-weight: normal;
     font-size: 16px;
+    text-shadow: 2px 2px 2px black;
 }
 
-:root{
-    --cor1:black;
-    --cor2:white;
-    --cor3:#47F4FF;
-}
+
 
 body{
     background-color: var(--cor1);
     /* background: var(--cor1) url("../image/bg-desktop.jpg") no-repeat center / cover fixed; */
     height: 100vh;
-    color: var(--cor2) ;
+    color: var(--cor2);
+    
 }
 
 body::before{
@@ -29,12 +38,12 @@ body::before{
     background: var(--cor1) url("../image/bg-desktop.jpg") no-repeat center / cover fixed;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position:absolute;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
-/* Pelo que entendi o esse outro metodo é para tornar o fundo independente do body, assim podendo modificar sua opacidade e assim mesclar a cor de fundo(preta) com o fundo, mas isso também é possivel no modo normal*/
+/* Pelo que entendi o esse outro metodo é para tornar o fundo independente do body, assim podendo modificar sua opacidade e assim mesclar a cor de fundo(preta) com o fundo, mas isso também é possivel no modo normal -> não é possivel, pois a opacidade é aplicada no body como um todo*/ 
 /* Fiz desse metodo para poder usar o z-index e o opacity, duas configurações que não tinha usado */
 
 /* ----------------------------------------------------------- */
@@ -78,18 +87,23 @@ main.selecao_de_personagens > section.personagens  ul.lista_de_personagens{
     gap: 30px;
 }
 
+li.personagem{
+    border-bottom: 2px solid var(--cor3);
+}
+
 li.personagem > img{
     width: 100%;
     height: 100%;
+    margin-bottom: -5px;
 }
 
 .lista_de_personagens .personagem.selecionado{
     box-shadow: 0px 0px 24px 5px var(--cor3);
 }
 
-/* li:hover{
-    box-shadow: 0px 0px 24px 5px var(--cor3);
-} */
+li:hover{
+    transform: scale(1.25);
+}
 
 
 /* Outra dica é usar as classes+tag para deixar mais especifico, ja que eles usaram somente as classes, isso dificulta caso queira usar o estilo em outro lugar mas facilita em não tornar o projeto confuso*/
@@ -110,9 +124,9 @@ section.personagem_selecionado{
 h2.nome_personagem{
     border-bottom: 2px solid var(--cor3);
     letter-spacing: 0.3rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
-    text-transform: uppercase;
+    font-variant: small-caps;
 }
 
 p.descricao_personagem{
@@ -120,5 +134,4 @@ p.descricao_personagem{
     line-height: 1.5rem;
     margin-top: 20px;
     width: 420px;
-
 }
