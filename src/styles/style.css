@@ -91,6 +91,9 @@ li.personagem > img{
     box-shadow: 0px 0px 24px 5px var(--cor3);
 } */
 
+
+/* Outra dica é usar as classes+tag para deixar mais especifico, ja que eles usaram somente as classes, isso dificulta caso queira usar o estilo em outro lugar mas facilita em não tornar o projeto confuso*/
+
 /* ----------------------------------------------------------- */
 
 section.personagem_selecionado{
